@@ -20,7 +20,8 @@
 			if($row['password']==$password){
 				
 				echo "ok"; // log in
-				$_SESSION['user_session'] = $row['user_id'];
+				$_SESSION['user_session'] = $row['id'];
+                $_SESSION['user_role'] = $row['role'];
 			}
 			else{
 				
